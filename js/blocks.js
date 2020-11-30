@@ -1,6 +1,7 @@
 (function (global) {
   "use strict";
 
+
   function createBlock(name, value, contents) {
     var item = elem(
       "div",
@@ -80,6 +81,6 @@
     run: runBlocks,
   };
 
-  window.addEventListener("unload", file.saveLocal, false);
-  window.addEventListener("load", file.restoreLocal, false);
+  window.addEventListener("unload", file.saveLocal);
+  window.addEventListener("load", file.restoreLocal);
 })(window);

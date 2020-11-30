@@ -108,14 +108,14 @@
 
   document
     .querySelector(".clear-action")
-    .addEventListener("click", clearScript, false);
+    .addEventListener("click", clearScript);
   document
     .querySelector(".save-action")
-    .addEventListener("click", saveFile, false);
+    .addEventListener("click", saveFile);
   document
     .querySelector(".load-action")
-    .addEventListener("click", loadFile, false);
+    .addEventListener("click", loadFile);
   document
     .querySelector(".choose-example")
-    .addEventListener("change", loadExample, false);
+    .addEventListener("change", loadExample);
 })(window);

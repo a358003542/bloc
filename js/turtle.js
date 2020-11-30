@@ -157,7 +157,7 @@
   Menu.item("Hide turtle", hideTurtle);
   Menu.item("Show turtle", showTurtle);
 
-  script.addEventListener("beforeRun", clear, false); // always clear canvas first
-  script.addEventListener("afterRun", drawTurtle, false); // show turtle if visible
-  window.addEventListener("resize", onResize, false);
+  script.addEventListener("beforeRun", clear); // always clear canvas first
+  script.addEventListener("afterRun", drawTurtle); // show turtle if visible
+  window.addEventListener("resize", onResize);
 })(window);

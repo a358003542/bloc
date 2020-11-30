@@ -54,8 +54,8 @@
     item: menuItem,
   };
 
-  document.addEventListener("scriptChanged", runSoon, false);
-  script.addEventListener("run", runEach, false);
-  script.addEventListener("change", runSoon, false);
-  script.addEventListener("keyup", runSoon, false);
+  document.addEventListener("scriptChanged", runSoon);
+  script.addEventListener("run", runEach);
+  script.addEventListener("change", runSoon);
+  script.addEventListener("keyup", runSoon);
 })(window);
